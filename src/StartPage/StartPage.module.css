@@ -1,0 +1,13 @@
+.startpage {
+  margin: 0 auto;
+  display: grid;
+  width: 1200px;
+
+  grid-template-areas:
+    "h h"
+    "c c";
+  grid-template-rows: 60px 1fr;
+}
+.startpagecontent {
+  grid-area: c;
+}
