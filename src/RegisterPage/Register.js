@@ -130,8 +130,10 @@ const Register = () => {
                   }}
                   aria-invalid={validEmail ? "false" : "true"}
                   aria-describedby="uidnote"
-                  // onFocus={() => setEmailFocus(true)}  hiding errormsg for incorrect email when not focused
-                  // onBlur={() => setEmailFocus(false)}
+                  onFocus={() =>
+                    setEmailFocus(true)
+                  } /*hiding errormsg for incorrect email when not focused*/
+                  onBlur={() => setEmailFocus(false)}
                 />
                 <Grid
                   id="uidnote"
